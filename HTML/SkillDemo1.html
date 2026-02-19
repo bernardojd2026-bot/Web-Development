@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Delivery Form</title>
+</head>
+<body>
+  <form action="https://drhws.net/webdev/formskillsubmit.php" method="get">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="FName" maxlength="30"><br><br>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="LName" maxlength="30"><br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="EmailAddr"><br><br>
+
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="Pwd"><br><br>
+
+    <label>Are you younger than 13 years old?</label><br>
+    <input type="radio" id="minorYes" name="Minor" value="Yes">
+    <label for="minorYes">Yes</label>
+    <input type="radio" id="minorNo" name="Minor" value="No" checked>
+    <label for="minorNo">No</label><br><br>
+
+    <label>Would you like to join our email newsletter?</label><br>
+    <input type="radio" id="emailYes" name="EmailList" value="Yes">
+    <label for="emailYes">Yes</label>
+    <input type="radio" id="emailNo" name="EmailList" value="No" checked>
+    <label for="emailNo">No</label><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* ===== GLOBAL PAGE LAYOUT ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 6px;
+}
+
+/* ===== FORMS ===== */
+form {
+    margin-top: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button, .btn {
+    background-color: #0078D4;
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background-color: #005fa3;
+}
+
+/* ===== TABLES ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background: #0078D4;
+    color: white;
+    text-align: left;
+}
+
+/* ===== STATUS COLORS ===== */
+.paid {
+    color: green;
+    font-weight: bold;
+}
+
+.unpaid {
+    color: red;
+    font-weight: bold;
+}
+
+/* ===== IMAGE DISPLAY ===== */
+img {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+}
+
+/* ===== NAVIGATION LINKS ===== */
+a {
+    color: #0078D4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== PRINT MODE ===== */
+@media print {
+    button,
+    .btn {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .container {
+        width: 100%;
+        box-shadow: none;
+        margin: 0;
+    }
+    .search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 10px;
+    width: 220px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.lot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.lot-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    text-align: center;
+}
+
+.lot-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category-tag {
+    font-weight: bold;
+    color: #555;
+    margin: 6px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+.lot-card .btn {
+    margin-top: 10px;
+    display: inline-block;
+}
+}
