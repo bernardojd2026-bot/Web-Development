@@ -1,9 +1,9 @@
 <?php
 
-$host = "cis3870-2504.mysql.database.azure.com";
-$user = "bernardojd_fc";
-$pass = "0cc497ad5c63020bf8d145f8";
-$db   = "bernardojd_db";
+$host = "examplehost";
+$user = "exampleuser";
+$pass = "examplepass";
+$db   = "exampledb";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
