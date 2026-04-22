@@ -1,8 +1,8 @@
 <?php
-$servername = "cis3870-2504.mysql.database.azure.com";
-$username = "bernardojd_fc";
-$password = "0cc497ad5c63020bf8d145f8";
-$dbname = "bernardojd_db";
+$servername = "exampleserver";
+$username = "exampleuser";
+$password = "examplepass";
+$dbname = "exampledb";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
